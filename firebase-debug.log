@@ -1,0 +1,35 @@
+[debug] [2018-08-16T14:44:59.542Z] ----------------------------------------------------------------------
+[debug] [2018-08-16T14:44:59.545Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2018-08-16T14:44:59.546Z] CLI Version:   4.1.1
+[debug] [2018-08-16T14:44:59.546Z] Platform:      darwin
+[debug] [2018-08-16T14:44:59.546Z] Node Version:  v8.11.1
+[debug] [2018-08-16T14:44:59.569Z] Time:          Thu Aug 16 2018 11:44:59 GMT-0300 (-03)
+[debug] [2018-08-16T14:44:59.569Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-16T14:44:59.607Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-08-16T14:44:59.607Z] > authorizing via signed-in user
+[info] 
+     🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥     🔥🔥🔥     🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥     🔥🔥 🔥🔥       🔥🔥     🔥🔥  🔥🔥   🔥🔥  🔥🔥       🔥🔥
+     🔥🔥🔥🔥🔥🔥    🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥   🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥    🔥🔥  🔥🔥       🔥🔥     🔥🔥 🔥🔥     🔥🔥       🔥🔥 🔥🔥
+     🔥🔥       🔥🔥🔥🔥 🔥🔥     🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥     🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/margotwilliamstorrico/Documents/LABORATORIA/foodMap 2.0
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-08-16T14:45:44.683Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-16T14:45:44.683Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-08-16T14:45:44.995Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-16T14:45:45.070Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ 
+[debug] [2018-08-16T14:45:46.318Z] <<< HTTP RESPONSE 200
