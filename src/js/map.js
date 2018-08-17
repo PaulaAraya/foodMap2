@@ -27,6 +27,7 @@ navigator.geolocation.getCurrentPosition((position) => {
     });
   console.log(position);
 })
+
 // variable Explore envia solicitudes de búsqueda
 var search = new H.places.Search(platform.getPlacesService()), searchResult, error;
 let markers = [];
@@ -48,11 +49,16 @@ foodSelect.addEventListener('change', () => {
     exploreResult.results.items.forEach(item => {
       let coords = {
         lng: item.position[1],
-        lat: item.position[0]
+        lat: item.position[0],
+        name: item.title,   
+        address: item.vicinity,
+        hours: item.openingHours
       }
       var marker = new H.map.Marker(coords);
       markers.push(marker);
+      showResult(coords);
       map.addObject(marker);
+      
     });
   }
 
@@ -61,6 +67,13 @@ foodSelect.addEventListener('change', () => {
     error = data;
   }
 
-  // Run a search request with parameters, headers (empty), and callback functions:
+  // solicitud de búsqueda con parámetros y callback
   search.request(params, {}, onResult, onError);
-})
+});
+
+const showResult = (coords) => {
+  let printRestaurant = document.getElementById('printRestaurant');
+  printRestaurant.innerHTML += `<p>
+  Local: ${JSON.stringify(coords.name)}
+  Direccion: ${JSON.stringify(coords.address)}</p>`;
+}

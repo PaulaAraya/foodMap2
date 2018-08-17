@@ -8,3 +8,4 @@ function principalPageSplash() {
     mapPage.style.display = 'block'; 
   }, 3000);
 };
+
