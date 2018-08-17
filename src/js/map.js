@@ -44,19 +44,20 @@ foodSelect.addEventListener('change', () => {
   function onResult(exploreResult) {
     map.removeObjects(markers);//remueve marcadores cuando cambias de geolocalización
     markers = []; //almacena los marcadores 
+    cleanResult();
     //recorrer items para la info de los restaurantes
     console.log(exploreResult);
     exploreResult.results.items.forEach(item => {
-      let coords = {
+      let info = {
         lng: item.position[1],
         lat: item.position[0],
         name: item.title,   
         address: item.vicinity,
         hours: item.openingHours
       }
-      var marker = new H.map.Marker(coords);
+      var marker = new H.map.Marker(info);
       markers.push(marker);
-      showResult(coords);
+      showResult(info);
       map.addObject(marker);
       
     });
@@ -71,9 +72,3 @@ foodSelect.addEventListener('change', () => {
   search.request(params, {}, onResult, onError);
 });
 
-const showResult = (coords) => {
-  let printRestaurant = document.getElementById('printRestaurant');
-  printRestaurant.innerHTML += `<p>
-  Local: ${JSON.stringify(coords.name)}
-  Direccion: ${JSON.stringify(coords.address)}</p>`;
-}
